@@ -1,17 +1,79 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header >
+  <ion-toolbar color="tertiary">
     <ion-title>
-      Tab 1
+      Bebidas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar placeholder="buscar bebida"></ion-searchbar>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://vaya.in/recipes/wp-content/uploads/2019/02/Iced-Mocha.jpg">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-bebida ion-text-wrap">
+        <h1>MOCHA</h1>
+        <p>chocolate, café e leite</p>
+      </div>
+    </ion-label>
+    <ion-badge slot="end" color="light">
+      <div class="item-preço">
+        <p class="moeda">R$</p>
+        <p class="valor">5.00</p>
+      </div>
+    </ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/R3b13d381a0c97e6306fca940da250477?rik=MWFHW%2f%2btijvXlA&pid=ImgRaw">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-bebida ion-text-wrap">
+        <h1>MACCHIATO</h1>
+        <p>expresso e creme de leite</p>
+      </div>
+    </ion-label>
+    <ion-badge slot="end" color="light">
+      <div class="item-preço">
+        <p class="moeda">R$</p>
+        <p class="valor">4.00</p>
+      </div>
+    </ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://www.maquinascafeexpresso.com/wp-content/uploads/2019/09/quais-sao-caracteristicas-cafe-longo-2.jpg">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-bebida ion-text-wrap">
+        <h1>EXPRESSO LONGO</h1>
+        <p>expresso diluído com água</p>
+      </div>
+    </ion-label>
+    <ion-badge slot="end" color="light">
+      <div class="item-preço">
+        <p class="moeda">R$</p>
+        <p class="valor">3.00</p>
+      </div>
+    </ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://supplemania.net/wp-content/uploads/2019/03/Protein-Shake-Recipes-9.jpg">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-bebida ion-text-wrap">
+        <h1>GELADO</h1>
+        <p>expresso duplo, caramelo, gelo de leite e chantilly</p>
+      </div>
+    </ion-label>
+    <ion-badge slot="end" color="light">
+      <div class="item-preço">
+        <p class="moeda">R$</p>
+        <p class="valor">6.00</p>
+      </div>
+    </ion-badge>
+  </ion-item>
 </ion-content>
